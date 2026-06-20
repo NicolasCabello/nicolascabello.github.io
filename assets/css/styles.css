@@ -473,6 +473,43 @@ section {
   overflow-wrap: anywhere;
 }
 
+.contact-link-phones {
+  align-items: flex-start;
+}
+
+.contact-phone-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 6px;
+}
+
+.contact-phone-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text);
+  padding: 6px 8px;
+  margin-inline: -8px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  flex: 1 1 auto;
+  min-width: fit-content;
+}
+
+.contact-phone-row:hover,
+.contact-phone-row:focus-visible {
+  background: var(--bg);
+}
+
+.contact-flag {
+  font-size: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
 /* ── FOOTER ── */
 footer {
   text-align: center;
